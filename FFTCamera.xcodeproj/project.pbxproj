@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B75B96E2B6A7D8500970D96 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75B96D2B6A7D8500970D96 /* CoreImage.framework */; };
+		0B75B9702B6A7DE500970D96 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75B96F2B6A7DE500970D96 /* CoreMedia.framework */; };
+		0B75B9722B6A7DFD00970D96 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75B9712B6A7DF000970D96 /* libc++.tbd */; };
+		0B75B9742B6A7E0900970D96 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75B9732B6A7E0900970D96 /* CoreGraphics.framework */; };
+		0B75B97A2B6A7FBE00970D96 /* opencv2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75B9792B6A7FBE00970D96 /* opencv2.xcframework */; };
+		0B75B97B2B6A7FBE00970D96 /* opencv2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75B9792B6A7FBE00970D96 /* opencv2.xcframework */; };
+		0B75B97C2B6A7FBE00970D96 /* opencv2.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B75B9792B6A7FBE00970D96 /* opencv2.xcframework */; };
+		0B75B9802B6B812A00970D96 /* FFTProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0B75B97F2B6B812A00970D96 /* FFTProcessor.mm */; };
+		0B75B9812B6B812A00970D96 /* FFTProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0B75B97F2B6B812A00970D96 /* FFTProcessor.mm */; };
+		0B75B9822B6B812A00970D96 /* FFTProcessor.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0B75B97F2B6B812A00970D96 /* FFTProcessor.mm */; };
+		0BDB44BA2B68370600A4E0B8 /* FFTCameraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB44B92B68370600A4E0B8 /* FFTCameraApp.swift */; };
+		0BDB44BC2B68370600A4E0B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB44BB2B68370600A4E0B8 /* ContentView.swift */; };
+		0BDB44BE2B68370800A4E0B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDB44BD2B68370800A4E0B8 /* Assets.xcassets */; };
+		0BDB44C12B68370800A4E0B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BDB44C02B68370800A4E0B8 /* Preview Assets.xcassets */; };
+		0BDB44CB2B68370800A4E0B8 /* FFTCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB44CA2B68370800A4E0B8 /* FFTCameraTests.swift */; };
+		0BDB44D52B68370900A4E0B8 /* FFTCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB44D42B68370900A4E0B8 /* FFTCameraUITests.swift */; };
+		0BDB44D72B68370900A4E0B8 /* FFTCameraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB44D62B68370900A4E0B8 /* FFTCameraUITestsLaunchTests.swift */; };
+		0BDB44E72B683EA400A4E0B8 /* ImageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BDB44E62B683EA400A4E0B8 /* ImageControl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0BDB44C72B68370800A4E0B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BDB44AE2B68370600A4E0B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BDB44B52B68370600A4E0B8;
+			remoteInfo = FFTCamera;
+		};
+		0BDB44D12B68370900A4E0B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BDB44AE2B68370600A4E0B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BDB44B52B68370600A4E0B8;
+			remoteInfo = FFTCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B75B96D2B6A7D8500970D96 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		0B75B96F2B6A7DE500970D96 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		0B75B9712B6A7DF000970D96 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		0B75B9732B6A7E0900970D96 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0B75B9792B6A7FBE00970D96 /* opencv2.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = opencv2.xcframework; sourceTree = "<group>"; };
+		0B75B97E2B6B80EF00970D96 /* FFTProcessor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFTProcessor.h; sourceTree = "<group>"; };
+		0B75B97F2B6B812A00970D96 /* FFTProcessor.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = FFTProcessor.mm; sourceTree = "<group>"; };
+		0BDB44B62B68370600A4E0B8 /* FFTCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFTCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDB44B92B68370600A4E0B8 /* FFTCameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTCameraApp.swift; sourceTree = "<group>"; };
+		0BDB44BB2B68370600A4E0B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0BDB44BD2B68370800A4E0B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0BDB44C02B68370800A4E0B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0BDB44C62B68370800A4E0B8 /* FFTCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFTCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDB44CA2B68370800A4E0B8 /* FFTCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTCameraTests.swift; sourceTree = "<group>"; };
+		0BDB44D02B68370900A4E0B8 /* FFTCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FFTCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BDB44D42B68370900A4E0B8 /* FFTCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTCameraUITests.swift; sourceTree = "<group>"; };
+		0BDB44D62B68370900A4E0B8 /* FFTCameraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FFTCameraUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0BDB44E32B6839E900A4E0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0BDB44E62B683EA400A4E0B8 /* ImageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageControl.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0BDB44B32B68370600A4E0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B75B9702B6A7DE500970D96 /* CoreMedia.framework in Frameworks */,
+				0B75B9722B6A7DFD00970D96 /* libc++.tbd in Frameworks */,
+				0B75B9742B6A7E0900970D96 /* CoreGraphics.framework in Frameworks */,
+				0B75B96E2B6A7D8500970D96 /* CoreImage.framework in Frameworks */,
+				0B75B97A2B6A7FBE00970D96 /* opencv2.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDB44C32B68370800A4E0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B75B97B2B6A7FBE00970D96 /* opencv2.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDB44CD2B68370900A4E0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B75B97C2B6A7FBE00970D96 /* opencv2.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B75B96C2B6A7D8500970D96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B75B9732B6A7E0900970D96 /* CoreGraphics.framework */,
+				0B75B9712B6A7DF000970D96 /* libc++.tbd */,
+				0B75B96F2B6A7DE500970D96 /* CoreMedia.framework */,
+				0B75B96D2B6A7D8500970D96 /* CoreImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0BDB44AD2B68370600A4E0B8 = {
+			isa = PBXGroup;
+			children = (
+				0BDB44B82B68370600A4E0B8 /* FFTCamera */,
+				0BDB44C92B68370800A4E0B8 /* FFTCameraTests */,
+				0BDB44D32B68370900A4E0B8 /* FFTCameraUITests */,
+				0BDB44B72B68370600A4E0B8 /* Products */,
+				0B75B96C2B6A7D8500970D96 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0BDB44B72B68370600A4E0B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0BDB44B62B68370600A4E0B8 /* FFTCamera.app */,
+				0BDB44C62B68370800A4E0B8 /* FFTCameraTests.xctest */,
+				0BDB44D02B68370900A4E0B8 /* FFTCameraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0BDB44B82B68370600A4E0B8 /* FFTCamera */ = {
+			isa = PBXGroup;
+			children = (
+				0BDB44E32B6839E900A4E0B8 /* Info.plist */,
+				0B75B9792B6A7FBE00970D96 /* opencv2.xcframework */,
+				0BDB44B92B68370600A4E0B8 /* FFTCameraApp.swift */,
+				0BDB44BB2B68370600A4E0B8 /* ContentView.swift */,
+				0BDB44BD2B68370800A4E0B8 /* Assets.xcassets */,
+				0BDB44BF2B68370800A4E0B8 /* Preview Content */,
+				0BDB44E62B683EA400A4E0B8 /* ImageControl.swift */,
+				0B75B97E2B6B80EF00970D96 /* FFTProcessor.h */,
+				0B75B97F2B6B812A00970D96 /* FFTProcessor.mm */,
+			);
+			path = FFTCamera;
+			sourceTree = "<group>";
+		};
+		0BDB44BF2B68370800A4E0B8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0BDB44C02B68370800A4E0B8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0BDB44C92B68370800A4E0B8 /* FFTCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				0BDB44CA2B68370800A4E0B8 /* FFTCameraTests.swift */,
+			);
+			path = FFTCameraTests;
+			sourceTree = "<group>";
+		};
+		0BDB44D32B68370900A4E0B8 /* FFTCameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0BDB44D42B68370900A4E0B8 /* FFTCameraUITests.swift */,
+				0BDB44D62B68370900A4E0B8 /* FFTCameraUITestsLaunchTests.swift */,
+			);
+			path = FFTCameraUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0BDB44B52B68370600A4E0B8 /* FFTCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BDB44DA2B68370900A4E0B8 /* Build configuration list for PBXNativeTarget "FFTCamera" */;
+			buildPhases = (
+				0BDB44B22B68370600A4E0B8 /* Sources */,
+				0BDB44B32B68370600A4E0B8 /* Frameworks */,
+				0BDB44B42B68370600A4E0B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FFTCamera;
+			productName = FFTCamera;
+			productReference = 0BDB44B62B68370600A4E0B8 /* FFTCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0BDB44C52B68370800A4E0B8 /* FFTCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BDB44DD2B68370900A4E0B8 /* Build configuration list for PBXNativeTarget "FFTCameraTests" */;
+			buildPhases = (
+				0BDB44C22B68370800A4E0B8 /* Sources */,
+				0BDB44C32B68370800A4E0B8 /* Frameworks */,
+				0BDB44C42B68370800A4E0B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BDB44C82B68370800A4E0B8 /* PBXTargetDependency */,
+			);
+			name = FFTCameraTests;
+			productName = FFTCameraTests;
+			productReference = 0BDB44C62B68370800A4E0B8 /* FFTCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0BDB44CF2B68370900A4E0B8 /* FFTCameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0BDB44E02B68370900A4E0B8 /* Build configuration list for PBXNativeTarget "FFTCameraUITests" */;
+			buildPhases = (
+				0BDB44CC2B68370900A4E0B8 /* Sources */,
+				0BDB44CD2B68370900A4E0B8 /* Frameworks */,
+				0BDB44CE2B68370900A4E0B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BDB44D22B68370900A4E0B8 /* PBXTargetDependency */,
+			);
+			name = FFTCameraUITests;
+			productName = FFTCameraUITests;
+			productReference = 0BDB44D02B68370900A4E0B8 /* FFTCameraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0BDB44AE2B68370600A4E0B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					0BDB44B52B68370600A4E0B8 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+					};
+					0BDB44C52B68370800A4E0B8 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+						TestTargetID = 0BDB44B52B68370600A4E0B8;
+					};
+					0BDB44CF2B68370900A4E0B8 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
+						TestTargetID = 0BDB44B52B68370600A4E0B8;
+					};
+				};
+			};
+			buildConfigurationList = 0BDB44B12B68370600A4E0B8 /* Build configuration list for PBXProject "FFTCamera" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0BDB44AD2B68370600A4E0B8;
+			productRefGroup = 0BDB44B72B68370600A4E0B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0BDB44B52B68370600A4E0B8 /* FFTCamera */,
+				0BDB44C52B68370800A4E0B8 /* FFTCameraTests */,
+				0BDB44CF2B68370900A4E0B8 /* FFTCameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0BDB44B42B68370600A4E0B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDB44C12B68370800A4E0B8 /* Preview Assets.xcassets in Resources */,
+				0BDB44BE2B68370800A4E0B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDB44C42B68370800A4E0B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDB44CE2B68370900A4E0B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0BDB44B22B68370600A4E0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BDB44BC2B68370600A4E0B8 /* ContentView.swift in Sources */,
+				0B75B9802B6B812A00970D96 /* FFTProcessor.mm in Sources */,
+				0BDB44E72B683EA400A4E0B8 /* ImageControl.swift in Sources */,
+				0BDB44BA2B68370600A4E0B8 /* FFTCameraApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDB44C22B68370800A4E0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B75B9812B6B812A00970D96 /* FFTProcessor.mm in Sources */,
+				0BDB44CB2B68370800A4E0B8 /* FFTCameraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0BDB44CC2B68370900A4E0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B75B9822B6B812A00970D96 /* FFTProcessor.mm in Sources */,
+				0BDB44D72B68370900A4E0B8 /* FFTCameraUITestsLaunchTests.swift in Sources */,
+				0BDB44D52B68370900A4E0B8 /* FFTCameraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BDB44C82B68370800A4E0B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BDB44B52B68370600A4E0B8 /* FFTCamera */;
+			targetProxy = 0BDB44C72B68370800A4E0B8 /* PBXContainerItemProxy */;
+		};
+		0BDB44D22B68370900A4E0B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BDB44B52B68370600A4E0B8 /* FFTCamera */;
+			targetProxy = 0BDB44D12B68370900A4E0B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0BDB44D82B68370900A4E0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OBJC_BRIDGING_HEADER = FFTCamera/FFTProcessor.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0BDB44D92B68370900A4E0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-all_load";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = FFTCamera/FFTProcessor.h;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0BDB44DB2B68370900A4E0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FFTCamera/Preview Content\"";
+				DEVELOPMENT_TEAM = 5GJZT374BB;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFTCamera",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FFTCamera/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = youiida.FFTCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0BDB44DC2B68370900A4E0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FFTCamera/Preview Content\"";
+				DEVELOPMENT_TEAM = 5GJZT374BB;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFTCamera",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FFTCamera/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = youiida.FFTCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0BDB44DE2B68370900A4E0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GJZT374BB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFTCamera",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = youiida.FFTCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFTCamera.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FFTCamera";
+			};
+			name = Debug;
+		};
+		0BDB44DF2B68370900A4E0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GJZT374BB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFTCamera",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = youiida.FFTCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FFTCamera.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FFTCamera";
+			};
+			name = Release;
+		};
+		0BDB44E12B68370900A4E0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GJZT374BB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFTCamera",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = youiida.FFTCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FFTCamera;
+			};
+			name = Debug;
+		};
+		0BDB44E22B68370900A4E0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5GJZT374BB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FFTCamera",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = youiida.FFTCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FFTCamera;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0BDB44B12B68370600A4E0B8 /* Build configuration list for PBXProject "FFTCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BDB44D82B68370900A4E0B8 /* Debug */,
+				0BDB44D92B68370900A4E0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BDB44DA2B68370900A4E0B8 /* Build configuration list for PBXNativeTarget "FFTCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BDB44DB2B68370900A4E0B8 /* Debug */,
+				0BDB44DC2B68370900A4E0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BDB44DD2B68370900A4E0B8 /* Build configuration list for PBXNativeTarget "FFTCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BDB44DE2B68370900A4E0B8 /* Debug */,
+				0BDB44DF2B68370900A4E0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0BDB44E02B68370900A4E0B8 /* Build configuration list for PBXNativeTarget "FFTCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BDB44E12B68370900A4E0B8 /* Debug */,
+				0BDB44E22B68370900A4E0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0BDB44AE2B68370600A4E0B8 /* Project object */;
+}
